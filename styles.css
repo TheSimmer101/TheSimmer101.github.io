@@ -103,25 +103,3 @@ footer {
     100% { background: linear-gradient(45deg, red, yellow, green, blue); }
 } */
 
-.star {
-    width: 20px;
-    height: 20px;
-    position: absolute;
-    pointer-events: none;
-    background: linear-gradient(45deg, red, yellow, green, blue);
-    clip-path: polygon(50% 0%, 61% 25%, 98% 25%, 68% 50%, 79% 75%, 50% 50%, 21% 75%, 32% 50%, 2% 25%, 39% 25%);
-    animation: colorChange 2s infinite, fadeOut 1s forwards;
-}
-
-@keyframes colorChange {
-    0% { background: linear-gradient(45deg, red, yellow, green, blue); }
-    25% { background: linear-gradient(45deg, blue, red, yellow, green); }
-    50% { background: linear-gradient(45deg, green, blue, red, yellow); }
-    75% { background: linear-gradient(45deg, yellow, green, blue, red); }
-    100% { background: linear-gradient(45deg, red, yellow, green, blue); }
-}
-
-@keyframes fadeOut {
-    0% { opacity: 1; }
-    100% { opacity: 0; }
-}
